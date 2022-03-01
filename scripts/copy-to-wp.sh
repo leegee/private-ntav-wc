@@ -1,0 +1,1 @@
+cp -r dist/* /mnt/c/Users/leege/Local\ Sites/nta/app/public/wp-content/themes/responsive-nta/webcomponents/nta-search/

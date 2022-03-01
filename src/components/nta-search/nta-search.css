@@ -1,0 +1,19 @@
+:host {
+  display: block;
+  --box-shadow: 0 1pt 5pt rgba(32, 33, 36, 0.30);
+  --result-height: 90pt;
+  --top-bot-padding: 4pt;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+}
+
+.error {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 120%;
+}

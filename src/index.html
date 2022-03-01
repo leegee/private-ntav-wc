@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>NTA Search Demo</title>
+
+  <script type="module" src="build/nta-search.esm.js"></script>
+  <script nomodule src="build/nta-search.js"></script>
+  <style>
+    body {
+      padding: 1em;
+    }
+
+    h1 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    :root {
+      --nta-search-button-border: none;
+      --nta-search-button-font-size: 18pt;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>NTA Search Demo</h1>
+  <nta-search-app>
+    <span slot='search-button'>🔎</span>
+    <span slot='search-placeholder'>Search here</span>
+  </nta-search-app>
+
+</body>
+
+</html>

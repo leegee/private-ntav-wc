@@ -1,0 +1,42 @@
+{
+  "name": "nta-vanilla-search",
+  "version": "0.0.2",
+  "description": "Web Component To Search Vanilla NTA",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/nta-search/nta-search.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "build:local": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate",
+    "wp:copy": "bash scripts/copy-to-wp.sh",
+    "wp": "npm run build && npm run wp:copy",
+    "serve": "node -e \"require('connect')().use(require('serve-static')(__dirname+'/www')).listen(9191, () => { console.log('Server running on http://localhost:9191 ...'); });\""
+  },
+  "devDependencies": {
+    "@types/mocha": "^9.1.0",
+    "connect": "^3.7.0",
+    "cross-env": "^7.0.2",
+    "serve-static": "^1.14.1"
+  },
+  "dependencies": {
+    "@alepop/stencil-env": "^0.4.1",
+    "@stencil/core": "^2.14.0",
+    "@types/youtube": "0.0.38",
+    "debounce": "^1.2.0",
+    "fast-sha256": "^1.3.0"
+  },
+  "license": "MIT"
+}
